@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Maps [Maps Page]</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="css/address.css">
+    <link rel="stylesheet" href="css/maps.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.css">
+</head>
+<body>
+    <header>
+        <h1 class="mainTitle">Pharmacy Maps 지도 페이지</h1>
+        <nav>
+            <ul class="naviList">
+                <li class="subNavi"><a href="./index.html">메인</a></li>
+                <li class="subNavi"><a href="./maps.html">지도</a></li>
+                <li class="subNavi"><a href="./devel-Diary.html">개발 일지</a></li>
+            </ul>
+        </nav>
+
+        <hr>
+    </header>
+    
+    <section class="container">
+        <div class="map_wrap">
+            <div id="map"></div>
+            
+            <ul id="category">
+                <li id="PM9" data-order="2">
+                    <span class="category_bg pharmacy"></span>
+                    약국
+                </li>
+            </ul>
+
+            <div class="hAddr">
+                <span class="title">지도 중심부 기준 주소정보(지번주소 기준)</span>
+                <span id="centerAddr"></span>
+            </div>
+
+            <div class="location">
+                <div class="nowLocation">
+                    <!-- 사용자가 지도 상에서 클릭한 위치의 좌표 정보를 출력 -->
+                    <h3 id="infoText">지도상에 마우스 커서를 클릭하면 해당 위치의 좌표 정보를 출력합니다.</h3>
+                    <p id="result"></p>
+                </div>
+        
+                <hr>
+                <br>
+        
+                <div class="centerLocation">
+                    <!-- 중심좌표가 변경 될 때마다 변경된 중심좌표를 기준으로 지도 정보를 최신화 -->
+                    <h3 id="infoText1">지도 중심좌표가 변경 될 때 마다 변경된 지도 정보가 출력 됩니다.</h3>
+                    <p id="result1"></p>
+                </div>
+                
+                <div class="LocationzommLevel">
+                    <h3 id="infoText2" class="blind">현재 지도 레벨</h3>
+                    <p class="result2"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sideWrap">
+            <a href="#top" title="페이지 최상단으로 이동">
+                <img src="images/arrowUp-icon2.png" alt="Top-Button" class="topArrow">
+            </a>
+        </div>
+    </section>
+
+        <script type="text/javascript" 
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=81270ae564cbe03d5fccbc89e8cf0870&libraries=services"></script>
+        <script src="js/map.js"></script>
+    <hr>
+
+    <section class="footer">
+        <div class="iconwrap">
+            <p class="text">하단의 아이콘을 클릭하시면 해당 지도 웹 사이트로 이동하여 자세한 위치 정보를 검색 하실 수 있습니다</p>
+                <div class="kakaoWrap">
+                    <h4 class="kakaoinfo">카카오 맵</h4>
+                    <a href="https://map.kakao.com/" title="카카오 맵 웹 사이트로 이동">
+                        <img src="images/kakaoMap-icon.jpg" alt="카카오맵 아이콘">
+                    </a>
+                </div>
+                
+                <div class="naverWrap">
+                    <h4 class="naverinfo">네이버 지도</h4>
+                    <a href="https://map.naver.com/" title="네이버 맵 웹 사이트로 이동">
+                        <img src="images/NaverMap-icon.jpg" alt="네이버맵 아이콘">
+                    </a>
+                </div>
+
+                <div class="googleWrap">
+                    <h4 class="googleinfo">구글 지도</h4>
+                    <a href="https://www.google.co.kr/maps" title="구글 맵 웹 사이트로 이동">
+                        <img src="images/GoogleMap-icon.jpg" alt="구글맵 아이콘">
+                    </a>
+                </div>
+        </div>
+
+        <hr>
+
+        <address>
+            <p>주소 : 경기도 화성시 동탄3동</p>
+            <p>대표 연락처 : 031-234-5678</p>
+        </address>
+    </section>
+</body>
+</html>

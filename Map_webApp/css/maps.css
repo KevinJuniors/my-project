@@ -1,0 +1,16 @@
+.container>.sideWrap {
+    display: block;
+    z-index: 1000;
+    /* float: right; */
+    /* text-align: center; */
+    position: fixed;
+}
+
+.container>.sideWrap>a {
+    display: block;
+}
+
+.container>.sideWrap>a>.topArrow {
+    display: block;
+    margin-left: 1000px;
+}

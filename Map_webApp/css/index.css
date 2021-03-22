@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.blind {
+    display: none;
+    text-indent: -99999px;
+}
+
+li {
+    list-style: none;
+}
+
+.mainTitle {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.naviList {
+    display: block;
+}
+
+.subNavi {
+    color: #4a1e69;
+    display: inline-block;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.subNavi:hover {
+    background-color: #bdecec;
+    display: inline-block;
+}
+
+.container {
+    display: block;
+    padding-left: 400px;
+}
+
+.location {
+    display: block;
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+.map_wrap>.location>.nowLocation>#infoText {
+    font-size: 14px;
+}
+
+.map_wrap>.location>.nowLocation>#result {
+    background-color: #9ee9e9;
+}
+
+.location>.centerLocation>#infoText1 {
+    font-size: 14px;
+}
+
+.location>.centerLocation>#result1 {
+    background-color: #9ee9e9;
+}
+
+#map {
+    width: 900px;
+    height: 600px;
+    background-color: #9ee9e9;
+    position: relative;
+    overflow: hidden;
+}
+
+.infoText, .infoText1 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.btnTool {
+    display: inline-block;
+    margin-top: 17px;
+}
+
+.footer {
+    z-index: 10;
+    margin-top: 380px;
+}
+
+.footer>.iconwrap {
+    text-align: center;
+    top: 20px;
+    left: 50px;
+    position: relative;
+}
+
+.iconwrap>.kakaoWrap {
+    display: block;
+    float: left;
+    border: 1px solid #000000;
+}
+
+.kakaoWrap>.kakaoinfo {
+    font-size: 14px;
+}
+
+.kakaoWrap:hover {
+    background-color: #ffff00;
+}
+
+.iconwrap>.naverWrap {
+    display: block;
+    float: left;
+    border: 1px solid #000000;
+}
+
+.naverWrap>.naverinfo {
+    font-size: 14px;
+}
+
+.naverWrap:hover {
+    background-color: #08d408;
+}
+
+.iconwrap>.googleWrap {
+    display: block;
+    float: left;
+    border: 1px solid #000000;
+}
+
+.googleWrap>.googleinfo {
+    font-size: 14px;
+}
+
+.googleWrap:hover {
+    background-color: #bef0e9;
+}
+
+address {
+    display: block;
+    /* text-align: center; */
+    line-height: 10px;
+    margin-top: 35px;
+    float: right;
+    border: 1px solid #000000;
+}
+
+address>p {
+    font-size: 14px;
+}
