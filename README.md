@@ -1,5 +1,5 @@
 # My-Projest (프로젝트 한 줄 소개)
-카카오 맵 API를 활용하여 제작한 우리 약국 위치와 상세 정보(연락처, 주소)를 지도 상에 표시하여 알려주는 웹 앱 "Pharmacy Maps" 입니다.
+카카오 맵 API를 활용하여 제작한 우리동네 약국 위치와 상세 정보(연락처, 주소)를 지도 상에 표시하여 알려주는 웹 앱 "Pharmacy Maps" 입니다.
 
 # 사용 스킬
 HTML5, CSS3, JavaScript ES5 (일부 ES6 문법 사용), Bootstrap
