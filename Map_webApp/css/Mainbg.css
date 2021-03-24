@@ -1,0 +1,133 @@
+body {
+    font-family:'Noto Sans KR', sans-serif;
+}
+
+.container>#scrollWrap{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container>#scrollWrap>#fristWrap {
+    background-image: url("../images/Question-image02.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: local;
+    border: 1px solid #000000;
+    display: block;
+}
+
+.container>#scrollWrap>#secondWrap {
+    background-image: url("../images/pill-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: local;
+    border: 1px solid #000000;
+    display: block;
+}
+
+.container>#scrollWrap>#thirdWrap {
+    background-image: url("../images/maps-images.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: local;
+    border: 1px solid #000000;
+    display: block;
+}
+
+#scrollWrap>.bg-holder {
+    width: 1060px;
+    height: 650px;
+}
+
+#scrollWrap>#fristWrap>.contents {
+    display: block;
+}
+
+#scrollWrap>#secondWrap>.contents {
+    display: block;
+}
+
+#scrollWrap>#thirdWrap>.contents {
+    display: block;
+}
+
+#scrollWrap>#fristWrap>.contents>.contentsTitle {
+    display: inline-block;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#scrollWrap>#secondWrap>.contents>.contentsTitle {
+    display: inline-block;
+    font-size: 32px;
+    color: #ffffff;
+    background-color: #4487a1;
+    font-weight: bold;
+}
+
+#scrollWrap>#secondWrap>.contents>.contentsTitle:hover {
+    display: inline-block;
+    font-size: 32px;
+    color: #ffffff;
+    background-color: #285668;
+    font-weight: bold;
+}
+
+#scrollWrap>#thirdWrap>.contents>.contentsTitle {
+    display: inline-block;
+    font-size: 32px;
+    font-weight: bold;    
+}
+
+#scrollWrap>#thirdWrap>.contents>.contentsTitle:hover {
+    display: inline-block;
+    font-size: 32px;
+    font-weight: bold;
+    background-color: #ffffff;
+}
+
+
+#scrollWrap>#fristWrap>.contents>.contentsItem {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+#scrollWrap>#fristWrap>.contents>.contentsItem:hover {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 400;
+    background-color: #ffffff;
+}
+
+#scrollWrap>#secondWrap>.contents>.contentsItem {
+    display: inline-block;
+    font-size: 22px;
+    background-color: #4487a1;
+    color: #48ca44ea;
+    font-weight: 600;
+}
+
+#scrollWrap>#secondWrap>.contents>.contentsItem:hover {
+    display: inline-block;
+    color: #48ca44ea;
+    background-color: #285668;
+    font-weight: 600;
+}
+
+#scrollWrap>#thirdWrap>.contents>.contentsItem {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+#scrollWrap>#thirdWrap>.contents>.contentsItem:hover {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 400;
+    background-color: #ffffff;
+}

@@ -14,3 +14,14 @@
     display: block;
     margin-left: 1000px;
 }
+
+#categoryWrap {
+    display: block;
+}
+
+#categoryWrap>#category {
+    display: inline-block;
+    position: absolute;
+    top: 85px;
+    border: 2px solid #00000044;
+}

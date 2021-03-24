@@ -8,8 +8,16 @@
     text-indent: -99999px;
 }
 
+body {
+    font-family:'Noto Sans KR', sans-serif;
+}
+
 li {
     list-style: none;
+}
+
+header {
+    background-image: url("../images/bg_header.gif");
 }
 
 .mainTitle {
@@ -17,12 +25,19 @@ li {
     font-weight: bold;
 }
 
+nav {
+    display: block;
+    position: relative;
+}
+
 .naviList {
     display: block;
+    text-align: left;
+    font-size: 18px;
 }
 
 .subNavi {
-    color: #4a1e69;
+    color: #3d5fcf;
     display: inline-block;
     line-height: 20px;
     margin-top: 20px;
@@ -36,6 +51,7 @@ li {
 .container {
     display: block;
     padding-left: 400px;
+    position: relative;
 }
 
 .location {
@@ -73,6 +89,17 @@ li {
     font-weight: 400;
 }
 
+#infowrap {
+    display: block;
+    position: relative;
+    top: 30px;
+}
+
+.moveLink {
+    color: #ffffff;
+    font-size: 15px;
+}
+
 .btnTool {
     display: inline-block;
     margin-top: 17px;
@@ -81,6 +108,7 @@ li {
 .footer {
     z-index: 10;
     margin-top: 380px;
+    background-image: url("../images/bg_header.gif");
 }
 
 .footer>.iconwrap {
@@ -93,7 +121,6 @@ li {
 .iconwrap>.kakaoWrap {
     display: block;
     float: left;
-    border: 1px solid #000000;
 }
 
 .kakaoWrap>.kakaoinfo {
@@ -107,7 +134,6 @@ li {
 .iconwrap>.naverWrap {
     display: block;
     float: left;
-    border: 1px solid #000000;
 }
 
 .naverWrap>.naverinfo {
@@ -121,7 +147,6 @@ li {
 .iconwrap>.googleWrap {
     display: block;
     float: left;
-    border: 1px solid #000000;
 }
 
 .googleWrap>.googleinfo {

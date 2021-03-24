@@ -9,6 +9,7 @@
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/address.css">
+    <link rel="stylesheet" href="css/Mainbg.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.css">
 </head>
 <body>
@@ -18,7 +19,7 @@
             <ul class="naviList">
                 <li class="subNavi"><a href="./index.html">메인</a></li>
                 <li class="subNavi"><a href="./maps.html">지도</a></li>
-                <li class="subNavi"><a href="./devel-Diary.html">개발 일지</a></li>
+                <li class="subNavi"><a href="./devel-Diary.html">개발일지</a></li>
             </ul>
         </nav>
 
@@ -26,30 +27,58 @@
     </header>
     
     <section class="container">
+        <div id="scrollWrap">
+            <div id="fristWrap" class="bg-holder">
+                <div class="contents">
+                    <h3 class="contentsTitle">Pharmacy Maps 탄생 배경</h3>
+                    <p class="contentsItem">
+                        Pharmacy Maps 웹 서비스를 개발하기 이전에 개별적으로 React 온라인 강좌를 들으며 공부 하던 중 영화 API를 활용하여
+                        영화 소개 웹 페이지를 구현하는 예제가 있었는데 해당 예제를 만드는 과정이 꽤 흥미로웠고 예제를 다 만들고나서 추후
+                        포토폴리오 또한 한번쯤 API를 활용하여 제작하기로 결심하였으며,<br>
+                        그리고 마침 기회가 되어 카카오 맵 API를 활용한 주변 약국 위치 조회 및 위치 안내 웹 서비스인 Pharmacy Maps 개발 계획을 구상하였고, 
+                        약 3개월 이라는 기간 동안 본 웹 서비스를 개발에 몰두하여 제작하였습니다.
+                    </p>
+                </div>
+            </div>
+    
+            <div id="secondWrap" class="bg-holder">
+                <div class="contents">
+                    <h3 class="contentsTitle">Pharmacy Maps 제작에 사용된 스킬들</h3>
+                    <p class="contentsItem">
+                        HTML5, CSS3, JavaScript, BootStrap 등으로 각 웹 페이지들의 골격을 만들었으며,
+                        지도 API는 국내 지리 정보가 구글 지도에 비해 비교적 정확하게 반영 되어있는 카카오 맵 API를 활용 하였고,
+                        2021년 3월 22일 부로 Github에 업로드하며 정식으로 배포를 개시하였습니다.
+                    </p>
+                </div>
+            </div>
+    
+            <div id="thirdWrap" class="bg-holder">
+                <div class="contents">
+                    <h3 class="contentsTitle">Pharmacy Maps 기능소개</h3>
+                    <p class="contentsItem">
+                        본 페이지는 Pharmacy Maps 웹 서비스의 메인 페이지로
+                        해당 웹 서비스의 소개글, 소개글 부분 하단에 두 가지 버튼이 구현 되어 있는데
+                        하단의 "지도 메뉴로 이동" 버튼을 누르시거나 상단 메뉴 바의 "지도" 메뉴를 클릭 하시면
+                        본격적으로 지도 서비스를 이용하여 내 주변 약국 위치들과 각 약국들의 상세정보(약국들의 상호명, 연락처, 주소)
+                        등이 지도 상에 표시되어 확인 하실 수 있으며,
+
+                        Pharmacy Maps 개발자의 개발 일지를 확인 해보고 싶으신 방문자 여러분들은 상단 메뉴바의 "개발 일지"를 클릭 하시거나,
+                        하단의 "개발 일지로 이동" 버튼을 클릭하면 해당 페이지로 이동합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+
         <div id="infowrap">
-            <ul class="info">
-                <li>
-                    <h3>Pharmacy Maps 기능 소개</h3>
-                    <p>
-                        Pharmacy Maps는 카카오 맵 API 기반으로 제작되어진
-                        약국 위치 조회 웹 서비스입니다.
-                        기존 지도 웹 서비스와 유사하게 각 지역 별로 위치 해 있는
-                        실제 약국 위치를 지도 상에 표시해주고 약국 위치를 표시하는 마커 이미지를 클릭하면
-                        해당 약국의 상세 정보(주소, 연락처)를 지도 상에 표시 하는 기능을 제공하는 웹 서비스 입니다.
-                    </p>
-                </li>
+            <button class="btn btn-primary">
+                <a href="./maps.html" class="moveLink">지도 메뉴로 이동</a>
+            </button>
 
-                <li>
-                    <p>
-                        Pharmacy Maps 지도 웹 서비스를 이용 하시려면 지도 페이지로 이동 하시면 됩니다
-                    </p>
-
-                    <button><a href="./maps.html">이동</a></button>
-                </li>
+            <button class="btn btn-primary">
+                <a href="./devel-Diary.html" class="moveLink">개발 일지로 이동</a>
+            </button>
         </div>
     </section>
-
-    <hr>
 
     <section class="footer">
         <div class="iconwrap">

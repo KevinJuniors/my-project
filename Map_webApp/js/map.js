@@ -10,7 +10,7 @@ const mapContainer = document.getElementById("map");
 mapOption = { 
     center: new kakao.maps.LatLng(37.20993410884578, 127.05867025427891), // 지도의 중심좌표
     level: 3 // 지도의 확대 레벨
-}; 
+};
 
 // 지도를 생성하고 객체(Object)를 DOM에 반환하여 출력
 const map = new kakao.maps.Map(mapContainer, mapOption);
