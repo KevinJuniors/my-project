@@ -108,13 +108,13 @@ body {
     display: inline-block;
     font-size: 22px;
     background-color: #4487a1;
-    color: #48ca44ea;
+    color: #00ff6a;
     font-weight: 600;
 }
 
 #scrollWrap>#secondWrap>.contents>.contentsItem:hover {
     display: inline-block;
-    color: #48ca44ea;
+    color: #91ff00;
     background-color: #285668;
     font-weight: 600;
 }

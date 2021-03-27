@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pharmacy Maps [Main Page]</title>
+    <title>Pharmacy Map [Main Page]</title>
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/index.css">
@@ -14,23 +14,28 @@
 </head>
 <body>
     <header>
-        <h1 class="mainTitle">Pharmacy Maps 메인 페이지</h1>
-        <nav>
-            <ul class="naviList">
-                <li class="subNavi"><a href="./index.html">메인</a></li>
-                <li class="subNavi"><a href="./maps.html">지도</a></li>
-                <li class="subNavi"><a href="./devel-Diary.html">개발일지</a></li>
-            </ul>
-        </nav>
+        <h1 class="Logo">
+            <a href="./index.html">
+                <img src="images/logo.jpg" alt="로고 이미지">
+            </a>
+        </h1>
 
-        <hr>
+        <div class="menuWrap">
+            <nav class="navbar navbar-expand-lg navbar-success bg-success">
+                <ul>
+                    <li class="subNavi"><a class="btn btn-dark" href="./index.html">메인</a></li>
+                    <li class="subNavi"><a class="btn btn-dark" href="./maps.html">지도</a></li>
+                    <li class="subNavi"><a class="btn btn-dark" href="./devel-Diary.html">개발일지</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
     <section class="container">
         <div id="scrollWrap">
             <div id="fristWrap" class="bg-holder">
                 <div class="contents">
-                    <h3 class="contentsTitle">Pharmacy Maps 탄생 배경</h3>
+                    <h3 class="contentsTitle">Pharmacy Map 탄생 배경</h3>
                     <p class="contentsItem">
                         Pharmacy Maps 웹 서비스를 개발하기 이전에 개별적으로 React 온라인 강좌를 들으며 공부 하던 중 영화 API를 활용하여
                         영화 소개 웹 페이지를 구현하는 예제가 있었는데 해당 예제를 만드는 과정이 꽤 흥미로웠고 예제를 다 만들고나서 추후
@@ -43,7 +48,7 @@
     
             <div id="secondWrap" class="bg-holder">
                 <div class="contents">
-                    <h3 class="contentsTitle">Pharmacy Maps 제작에 사용된 스킬들</h3>
+                    <h3 class="contentsTitle">Pharmacy Map 제작에 사용된 스킬들</h3>
                     <p class="contentsItem">
                         HTML5, CSS3, JavaScript, BootStrap 등으로 각 웹 페이지들의 골격을 만들었으며,
                         지도 API는 국내 지리 정보가 구글 지도에 비해 비교적 정확하게 반영 되어있는 카카오 맵 API를 활용 하였고,
@@ -54,7 +59,7 @@
     
             <div id="thirdWrap" class="bg-holder">
                 <div class="contents">
-                    <h3 class="contentsTitle">Pharmacy Maps 기능소개</h3>
+                    <h3 class="contentsTitle">Pharmacy Map 기능소개</h3>
                     <p class="contentsItem">
                         본 페이지는 Pharmacy Maps 웹 서비스의 메인 페이지로
                         해당 웹 서비스의 소개글, 소개글 부분 하단에 두 가지 버튼이 구현 되어 있는데
@@ -81,35 +86,14 @@
     </section>
 
     <section class="footer">
-        <div class="iconwrap">
-            <p class="text">하단의 아이콘을 클릭하시면 해당 지도 웹 사이트로 이동하여 자세한 위치 정보를 검색 하실 수 있습니다</p>
-                <div class="kakaoWrap">
-                    <h4 class="kakaoinfo">카카오 맵</h4>
-                    <a href="https://map.kakao.com/" title="카카오 맵 웹 사이트로 이동">
-                        <img src="images/kakaoMap-icon.jpg" alt="카카오맵 아이콘">
-                    </a>
-                </div>
-                
-                <div class="naverWrap">
-                    <h4 class="naverinfo">네이버 지도</h4>
-                    <a href="https://map.naver.com/" title="네이버 맵 웹 사이트로 이동">
-                        <img src="images/NaverMap-icon.jpg" alt="네이버맵 아이콘">
-                    </a>
-                </div>
-
-                <div class="googleWrap">
-                    <h4 class="googleinfo">구글 지도</h4>
-                    <a href="https://www.google.co.kr/maps" title="구글 맵 웹 사이트로 이동">
-                        <img src="images/GoogleMap-icon.jpg" alt="구글맵 아이콘">
-                    </a>
-                </div>
-        </div>
-
-        <hr>
-
         <address>
-            <p>주소 : 경기도 화성시 동탄3동</p>
-            <p>대표 연락처 : 031-234-5678</p>
+            <div class="card" id="addrWrap">
+                <p id="addrText">상호명 : Pharmacy Maps 커뮤니티</p>
+                <p id="addrText">상호등록 : 2015-01-02</p>
+                <p id="addrText">주소 : 경기도 화성시 동탄대로 123번지</p>
+                <p id="addrText">대표 연락처 : 031-234-5678</p>
+                <p id="addrText">대표이사 : 홍길동</p>
+            </div>
         </address>
     </section>
 </body>

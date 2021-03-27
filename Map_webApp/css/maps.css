@@ -1,8 +1,6 @@
 .container>.sideWrap {
     display: block;
     z-index: 1000;
-    /* float: right; */
-    /* text-align: center; */
     position: fixed;
 }
 

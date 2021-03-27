@@ -12,16 +12,21 @@
 </head>
 <body>
     <header>
-        <h1 class="mainTitle">Pharmacy Maps 개발 일지</h1>
-        <nav>
-            <ul class="naviList">
-                <li class="subNavi"><a href="./index.html">메인</a></li>
-                <li class="subNavi"><a href="./maps.html">지도</a></li>
-                <li class="subNavi"><a href="./devel-Diary.html">개발일지</a></li>
-            </ul>
-        </nav>
+        <h1 class="Logo">
+            <a href="./index.html">
+                <img src="images/logo.jpg" alt="로고 이미지">
+            </a>
+        </h1>
 
-        <hr>
+        <div class="menuWrap">
+            <nav class="navbar navbar-expand-lg navbar-success bg-success">
+                <ul>
+                    <li class="subNavi"><a class="btn btn-dark" href="./index.html">메인</a></li>
+                    <li class="subNavi"><a class="btn btn-dark" href="./maps.html">지도</a></li>
+                    <li class="subNavi"><a class="btn btn-dark" href="./devel-Diary.html">개발일지</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
     <section class="container">
@@ -39,10 +44,10 @@
                         <p class="text">2021-03-22~ 배포 개시 및 유지.보수 돌입</p>
 
                         <h3>개발자 한마디</h3>
-                        <p class="text">
-                            현재 웹 페이지 완성에 만족하지 않고 항상 배우고 발전하며 진취적인
-                            개발자가 될 것 이며 다음 목표는 해당 웹 서비스를 React로 재탄생 시키는 것 이다.
-                        </p>
+                            <p class="text">
+                                현재 웹 페이지 완성에 만족하지 않고 항상 배우고 발전하며 진취적인
+                                개발자가 될 것 이며 다음 목표는 해당 웹 서비스를 React로 재탄생 시키는 것 이다.
+                            </p>
                     </div>
                 </li>
             </ul>
@@ -57,8 +62,13 @@
 
     <section class="footer">
         <address>
-            <p>주소 : 경기도 화성시 동탄3동</p>
-            <p>대표 연락처 : 031-234-5678</p>
+            <div id="addrWrap">
+                <p id="addrText">상호명 : Pharmacy Maps 커뮤니티</p>
+                <p id="addrText">상호등록 : 2015-01-02</p>
+                <p id="addrText">주소 : 경기도 화성시 동탄대로 123번지</p>
+                <p id="addrText">대표 연락처 : 031-234-5678</p>
+                <p id="addrText">대표이사 : 홍길동</p>
+            </div>
         </address>
     </section>
 </body>

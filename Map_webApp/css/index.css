@@ -18,16 +18,13 @@ li {
 
 header {
     background-image: url("../images/bg_header.gif");
-}
-
-.mainTitle {
-    display: inline-block;
-    font-weight: bold;
+    position: relative;
 }
 
 nav {
-    display: block;
+    display: flex;
     position: relative;
+    justify-content: space-around;
 }
 
 .naviList {
@@ -39,13 +36,18 @@ nav {
 .subNavi {
     color: #3d5fcf;
     display: inline-block;
-    line-height: 20px;
+    line-height: 25px;
     margin-top: 20px;
 }
 
 .subNavi:hover {
     background-color: #bdecec;
     display: inline-block;
+}
+
+.Logo {
+    display: block;
+    text-align: center;
 }
 
 .container {
@@ -105,22 +107,17 @@ nav {
     margin-top: 17px;
 }
 
-.footer {
-    z-index: 10;
-    margin-top: 380px;
-    background-image: url("../images/bg_header.gif");
-}
-
-.footer>.iconwrap {
+.container>.iconwrap {
     text-align: center;
     top: 20px;
     left: 50px;
-    position: relative;
+    float: right;
+    margin-top: 160px;
 }
 
 .iconwrap>.kakaoWrap {
     display: block;
-    float: left;
+    float: right;
 }
 
 .kakaoWrap>.kakaoinfo {
@@ -133,7 +130,7 @@ nav {
 
 .iconwrap>.naverWrap {
     display: block;
-    float: left;
+    float: right;
 }
 
 .naverWrap>.naverinfo {
@@ -146,7 +143,7 @@ nav {
 
 .iconwrap>.googleWrap {
     display: block;
-    float: left;
+    float: right;
 }
 
 .googleWrap>.googleinfo {
@@ -157,15 +154,19 @@ nav {
     background-color: #bef0e9;
 }
 
-address {
-    display: block;
-    /* text-align: center; */
-    line-height: 10px;
-    margin-top: 35px;
-    float: right;
-    border: 1px solid #000000;
+.footer {
+    z-index: 10;
+    margin-top: 420px;
+    height: 160px;
+    background-image: url("../images/bg_header.gif");
 }
 
-address>p {
-    font-size: 14px;
+address {
+    display: block;
+    margin-top: -250px;
+}
+
+address>#addrWrap>#addrText {
+    font-size: 16px;
+    font-weight: 500;
 }

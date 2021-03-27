@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pharmacy Maps [Maps Page]</title>
+    <title>Pharmacy Map [Maps Page]</title>
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/index.css">
@@ -15,16 +15,21 @@
 </head>
 <body>
     <header>
-        <h1 class="mainTitle">Pharmacy Maps 지도 페이지</h1>
-        <nav>
-            <ul class="naviList">
-                <li class="subNavi"><a href="./index.html">메인</a></li>
-                <li class="subNavi"><a href="./maps.html">지도</a></li>
-                <li class="subNavi"><a href="./devel-Diary.html">개발일지</a></li>
-            </ul>
-        </nav>
+        <h1 class="Logo">
+            <a href="./index.html">
+                <img src="images/logo.jpg" alt="로고 이미지">
+            </a>
+        </h1>
 
-        <hr>
+        <div class="menuWrap">
+            <nav class="navbar navbar-expand-lg navbar-success bg-success">
+                <ul>
+                    <li class="subNavi"><a class="btn btn-dark" href="./index.html">메인</a></li>
+                    <li class="subNavi"><a class="btn btn-dark" href="./maps.html">지도</a></li>
+                    <li class="subNavi"><a class="btn btn-dark" href="./devel-Diary.html">개발일지</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
     <section class="container">
@@ -73,16 +78,10 @@
                 <img src="images/arrowUp-icon2.png" alt="Top-Button" class="topArrow">
             </a>
         </div>
-    </section>
 
-        <script type="text/javascript" 
-        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=81270ae564cbe03d5fccbc89e8cf0870&libraries=services"></script>
-        <script src="js/map.js"></script>
-    <hr>
 
-    <section class="footer">
         <div class="iconwrap">
-            <p class="text">하단의 아이콘을 클릭하시면 해당 지도 웹 사이트로 이동하여 자세한 위치 정보를 검색 하실 수 있습니다</p>
+            <p class="text blind">좌측 하단의 아이콘을 클릭하시면 해당 지도 웹 사이트로 이동하여 자세한 위치 정보를 검색 하실 수 있습니다</p>
                 <div class="kakaoWrap">
                     <h4 class="kakaoinfo">카카오 맵</h4>
                     <a href="https://map.kakao.com/" title="카카오 맵 웹 사이트로 이동">
@@ -103,11 +102,23 @@
                         <img src="images/GoogleMap-icon.jpg" alt="구글맵 아이콘">
                     </a>
                 </div>
+            </div>
         </div>
+    </section>
 
+        <script type="text/javascript" 
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=81270ae564cbe03d5fccbc89e8cf0870&libraries=services"></script>
+        <script src="js/map.js"></script>
+
+    <section class="footer">
         <address>
-            <p>주소 : 경기도 화성시 동탄3동</p>
-            <p>대표 연락처 : 031-234-5678</p>
+            <div class="card" id="addrWrap">
+                <p id="addrText">상호명 : Pharmacy Maps 커뮤니티</p>
+                <p id="addrText">상호등록 : 2015-01-02</p>
+                <p id="addrText">주소 : 경기도 화성시 동탄대로 123번지</p>
+                <p id="addrText">대표 연락처 : 031-234-5678</p>
+                <p id="addrText">대표이사 : 홍길동</p>
+            </div>
         </address>
     </section>
 </body>
