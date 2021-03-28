@@ -16,11 +16,6 @@ li {
     list-style: none;
 }
 
-.mainTitle {
-    display: inline-block;
-    font-weight: bold;
-}
-
 nav {
     display: block;
     position: relative;
