@@ -16,7 +16,7 @@ mapOption = {
 const map = new kakao.maps.Map(mapContainer, mapOption);
 
 // 장소 검색 객체를 생성
-var ps = new kakao.maps.services.Places(map); 
+var ps = new kakao.maps.services.Places(map);
     
 // 지도에 idle Event를 등록
 kakao.maps.event.addListener(map, 'idle', searchPlaces);
