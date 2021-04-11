@@ -24,3 +24,7 @@ Pharmacy Map 웹 서비스에 접속하게 되면 메인 페이지로 접속하�
 ## [개발 일지](https://kevinjuniors.github.io/my-project/webapp/devel-Diary.html) 
 개발 일지 페이지는 Pharmacy Map 웹 서비스 최초 기획부터 배포까지 웹 서비스 제작 과정을 전반적으로 기술 해 놓은 내용과 함께, 개발자 한마디라는 키워드와 함께 개발자로서
 향후 목표를 밝히는 내용으로 구성되어 있습니다.
+
+## 개발 현황
+04-05 Pharmacy Map 1.0 템플릿 변경 작업 개시
+04-11 Pharmacy Map 1.0 템플릿 변경 작업 1차 완성 (Text logo, Menu bar, Text slide Banner, Note 부분 완성)
