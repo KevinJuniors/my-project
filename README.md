@@ -27,4 +27,5 @@ Pharmacy Map 웹 서비스에 접속하게 되면 메인 페이지로 접속하�
 
 ## 개발 현황
 04-05 Pharmacy Map 1.0 템플릿 변경 작업 개시  
-04-11 Pharmacy Map 1.0 템플릿 변경 작업 1차 완성 (Text logo, Menu bar, Text slide Banner, Note 부분 완성)
+04-11 Pharmacy Map 1.0 템플릿 변경 작업 1차 완성 (Text logo, Menu bar, Text slide Banner, Note 부분 완성)  
+04-13 Pharmacy Map 1.0 템플릿 변경 작업 2차 완성 (카카오 맵 API 적용작업)
