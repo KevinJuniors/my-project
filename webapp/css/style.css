@@ -24,10 +24,12 @@ p {
 	
 	margin:0 0;
 }
-ul{
+
+ul {
 	padding:0 0;
 	margin:0 0;	
 }
+
 body {
 	padding:0 0;
 	margin:0 0; 
@@ -36,8 +38,9 @@ body {
 	
 }
 
-.header{
-	background: url("../images/banner.jpg") no-repeat center top;
+.header {
+	background: url("../images/banner-image03.png")
+		no-repeat center top;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -51,16 +54,16 @@ body {
 	padding-top: 3em;
 }
 
-.logo{
+.logo {
 	float:left;
 	
 }
 
-.top-menu{
+.top-menu {
 	float:right;
 }
 
-.top-menu ul li{
+.top-menu ul li {
 	display: inline-block;
 	padding: 5px 15px 0px 15px;
 }
@@ -70,17 +73,17 @@ body {
 	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
-	
 }
+
 .top-menu ul li a:hover {
 	color: #ef664d;
-	
-	
 }
+
 .top-menu ul li a.active {
 	color: #ef664d;
 	font-weight: 600;
 }
+
 nav a {
 	position: relative;
 	display: inline-block;
@@ -90,15 +93,16 @@ nav a {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 400;
-	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	text-shadow: 0 0 1px #ffffff4d;
 	font-size: 1.35em;
 }
 
+/* 네비게이션 CSS 속성설정 */
 nav a:hover,
 nav a:focus {
 	outline: none;
 }
-/* Effect 5: same word slide in */
+
 .cl-effect-5 a {
 	overflow: hidden;
 }
@@ -128,7 +132,7 @@ nav a:focus {
 	transform: translateY(-100%);
 }
 
-/***** Slider *****/
+/* 슬라이더 배너 CSS설정 */
 .banner-wrap {
 	padding-top: 30em;
 }
@@ -136,19 +140,23 @@ nav a:focus {
 .mainText {
 	display: block;
 	text-align: center;
-	font-weight: 700;
+	font-size: 25px;
+	font-weight: 600;
+	color: lightyellow;
 }
 
 .wmuSlider {
 	position: relative;
 	overflow: hidden;
 }
+
 .wmuSlider .wmuSliderWrapper article img {
 	max-width: 100%;
 	width: auto;
 	height: auto;
 	display:block;
 }
+
 /* Default Skin */
 .banner_center {
 	width: 50%;
@@ -158,12 +166,14 @@ nav a:focus {
 	text-align: center;
 
 }
+
 .banner_center h1 {
 	color: #eee;
 	font-family: 'Arvo', serif;
 	text-transform: uppercase;
 	font-size: 2.4em;
 }
+
 .banner_center h2 {
 	color: #eee;
 	font-family: 'Arvo', serif;
@@ -171,11 +181,12 @@ nav a:focus {
 	font-size: 2.4em;
 	padding:7px 0;
 }
-.banner_center h2 span
-{
+
+.banner_center h2 span {
 	color: #ef664d;
 	font-weight: 900;
 }
+
 .wmuSliderPagination {
 	z-index: 2;
 	position: absolute;
@@ -183,14 +194,17 @@ nav a:focus {
 	bottom: 6px;
 
 }
+
 ul.wmuSliderPagination {
 	padding:0;
 }
+
 .wmuSliderPagination li {
 	float: left;
 	margin: 0 8px 0 0;
 	list-style-type: none;
 }
+
 .wmuSliderPagination a {
 	text-indent: -9999px;
 	visibility: visible;
@@ -198,46 +212,53 @@ ul.wmuSliderPagination {
 	width: 15px;
 	display: inline-block;
 	border: 3px solid #CCCECE;
-	-webkit-border-radius: 50%;
+	border-radius: 50%;
 }
+
 .wmuSliderPagination a.wmuActive {
 	background: #ef664d;
 	border-color: #ef664d;
 }
 
-.bannertop_box{
+.bannertop_box {
 	width:23%;
 	float:left;
 }
-.services-section{
+
+.services-section {
 	padding:3em 0;
 }
-.services-header{
+
+.services-header {
 	text-align: center;
 	width: 85%;
 	margin: 0 auto;
 
 }
-.services-header h3
-{
+
+.services-header h3 {
 	font-size: 2.5em;
 	font-family: 'Arvo', serif;
 	text-transform: uppercase;
 	font-weight: 400;
 	color: #2a404e;
 }
+
 .services-header h3 span {
 	color: #F0C514;
 }
-.services-header p{
+
+.services-header p {
 	line-height: 1.5em;
 	font-size: 15px;
 	color: #7e7e7e;
 	padding: 25px 0;
 }
+
 .services-sectiongrids {
 	text-align: center;
 }
+
 .services-grid h4 {
 	font-size: 1.3em;
 	font-weight: bold;
@@ -245,64 +266,82 @@ ul.wmuSliderPagination {
 	color: #2a404e;
 	text-transform: uppercase;
 }
+
 .services-grid p {
 	font-size: 15px;
 	color: #7e7e7e;
 	padding: 0 22px;
 }
+
 .arrow1 {
 	padding-top: 30px;
 	text-align: center;
+	display: block;
+	position: relative;
+	top: -10px;
 }
-.works-section{
-	padding:3em 0;
-	background:#2e3e4e;
+
+.works-section {
+	padding: 3em 0;
+	background: #2e3e4e;
+	z-index: 10;
+	height: 600px;
 	
 }
-.works-header{
+
+.works-header {
 	text-align: center;
 	width: 85%;
 	margin: 0 auto;
 }
-.works-header h3
-{
-	font-size: 2.5em;
+
+.works-header .mapTitle {
+	display: inline-block;
+	position: relative;
+	font-size: 32px;
 	font-family: 'Arvo', serif;
 	text-transform: uppercase;
-	font-weight: 400;
+	font-weight: 500;
+	top: -15px;
 	color: #ef664d;
 }
+
 .works-header h3 span {
 	color: #fefefe;
 }
-.works-header p{
+
+.works-header p {
 	line-height: 1.5em;
-	
 	font-size: 15px;
 	color: #fefefe;
 	padding: 25px 0;
 }
-.portfolio-section{
+
+.portfolio-section {
 	background:#FFD670;
 	padding:4em 0;
 }
-.portfolio-section-head{
+
+.portfolio-section-head {
 	margin-bottom:4em;
 	position:relative;
 }
-.portfolio-section-head h3{
+
+.portfolio-section-head h3 {
 	color:#FFFFFF;
 	font-weight:700;
 	text-transform:uppercase;
 	font-size:2.3em;
 }
-.portfolio-section-head p{
+
+.portfolio-section-head p {
 	color:#FFF0CA;
 	font-weight:300;
 	font-size:1.2em;
 	margin-top: 1.35em;
 	text-transform: uppercase;
 }
+
 .portfolio-section-head label {
 	height: 3px;
 	width: 7%;
@@ -313,10 +352,12 @@ ul.wmuSliderPagination {
 	bottom: 52%;
 	margin: -10px 0;
 }
-.project-name{
+
+.project-name {
 	border-bottom:1px solid #FFF1CE;
 }
-.project-name span{
+
+.project-name span {
 	color: #FFF1CE;
 	font-weight: 300;
 	font-size: 15px;
@@ -324,21 +365,26 @@ ul.wmuSliderPagination {
 	text-transform: uppercase;
 	display: block;
 }
+
 .portfolio-section-top-row {
 	padding: 1em 0 4em 0;
 }
+
 .portfolio-section-top-row-left-grid {
 	padding: 0;
 }
-.project-name h3{
+
+.project-name h3 {
 	color:#fff;
 	font-weight:700;
 	font-size:1.5em;
 	margin-bottom: 1em;
 }
+
 .project-description ul {
 	margin: 0 0 14px 59px;
 }
+
 .project-description span{
 	color: #FFF1CE;
 	font-weight: 300;
@@ -347,27 +393,32 @@ ul.wmuSliderPagination {
 	display: block;
 	text-transform: uppercase;
 }
-.project-description ul li{
+
+.project-description ul li {
 	color:#fff;
 }
-.project-description ul li a{
+
+.project-description ul li a {
 	color:#fff;
 	font-size:15px;
 	font-weight:300;
 	margin: 6px 0;
 	list-style-type: disc;
 }
-.project-description p{
+
+.project-description p {
 	color: #fff;
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 1.8em;
 	margin-bottom: 1.5em;
 }
+
 .project-description{
 	border-bottom:1px solid #FFF1CE;
 }
-.address span{
+
+.address span {
 	color: #FFF1CE;
 	font-weight: 300;
 	font-size: 15px;
@@ -665,10 +716,15 @@ h2.resp-accordion {
 	width: 65%;
 	margin-top:3%; 
 }
-.about-text p {
-	font-size: 15px;
+.about-text .contentsText {
+	font-size: 18px;
+	/* border: 1px solid #0000ff; */
 	color: #7e7e7e;
 	line-height: 1.5em;
+	display: inline-block;
+	position: relative;
+	left: 150px;
+
 }
 .about-sectiongrids{
 	padding: 40px 0px;
