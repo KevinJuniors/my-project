@@ -23,9 +23,9 @@
 }
 
 #centerAddr {
-    display: block;
-    font-family: 'Black And White Picture', sans-serif;
-    font-size: 16px;
+    display: flex;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 17px;
     font-weight: 800;
     margin-top: 2px;
     cursor: default;
