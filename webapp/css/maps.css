@@ -1,18 +1,3 @@
-.container>.sideWrap {
-    display: block;
-    z-index: 1000;
-    position: fixed;
-}
-
-.container>.sideWrap>a {
-    display: block;
-}
-
-.container>.sideWrap>a>.topArrow {
-    display: block;
-    margin-left: 1000px;
-}
-
 #map {
     top: 10px;
     width: 1200px;
@@ -20,8 +5,9 @@
     background-color: #48d8d8;
     position: relative;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
-
 #categoryWrap {
     display: block;
 }

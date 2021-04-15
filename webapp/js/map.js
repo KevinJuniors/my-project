@@ -197,32 +197,6 @@ map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
 const zoomControl = new kakao.maps.ZoomControl();
 map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 
-/* 지도에 Click Event 추가
-지도 클릭시 마지막 매개 변수(Parameter)로 넘어온 함수(Function)를 호출 */
-// kakao.maps.event.addListener(map, 'click', function(mouseEvent) {        
-//     // 클릭한 위도, 경도 정보를 로드
-//     var latlng = mouseEvent.latLng;
-    
-//     var message = '선택 지점의 위도 : ' + latlng.getLat() + '<br>';
-//     message += '선택 지점의 경도 : ' + latlng.getLng();
-    
-//     var resultDiv = document.getElementById('result'); 
-//     resultDiv.innerHTML = message;
-// });
-
-// 중심좌표 변경 이벤트 등록
-/* 지도가 이동, 확대 & 축소 등으로 중심좌표가 바뀔경우 마지막으로 넘어온 매개변수로 
-넘어온 함수를 호출 하도록 이벤트를 등록 */
-// kakao.maps.event.addListener(map, "center_changed", function() {
-//     var level1 = map.getLevel();
-//     var latlng1 = map.getCenter();
-//     var message1 = `<p>지도 레벨 : `+` ${level1}`
-//         message1 += '<p>중심 좌표는 위도 ' + latlng1.getLat() + ', 경도 ' + latlng1.getLng() + '입니다</p>';
-
-//     var resultDiv1 = document.getElementById('result1');
-//     resultDiv1.innerHTML = message1;
-// });
-
 // 좌표 정보를 주소로 변환
 // 좌표 정보를 주소로 변환하는 객체를 생성
 var geocoder = new kakao.maps.services.Geocoder();

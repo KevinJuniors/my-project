@@ -4,9 +4,11 @@
     height: 350px;
 }
 
-.title {
-    font-weight: bold;
-    display: block;
+.titleAddr {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: default;
 }
 
 .hAddr {
@@ -22,8 +24,11 @@
 
 #centerAddr {
     display: block;
+    font-family: 'Black And White Picture', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
     margin-top: 2px;
-    font-weight: normal;
+    cursor: default;
 }
 
 .bAddr {

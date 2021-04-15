@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="keywords" content="Onepage Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
@@ -17,8 +17,7 @@
 	</script>
 	<title>Pharmacy Map</title>
 	<link rel="shortcut icon" href="images/favicon.ico" />
-	<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/index.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="css/address.css" />
 	<link rel="stylesheet" href="css/category.css" />
     <link rel="stylesheet" href="css/address.css" />
@@ -27,18 +26,7 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/move-top.js"></script>
 	<script src="js/easing.js"></script>
-	<script>
-		$(document).ready(function($) {
-			$(".scroll").click(function(event){		
-				event.preventDefault();
-				$('html,body').animate(
-					{
-						scrollTop: $(this.hash).offset().top
-					}
-				,1200);
-			});
-		});
-	</script>
+	<script src="js/scrollEvent.js"></script>
 </head>
 <body>
 	<div class="header" id="head">
@@ -46,7 +34,7 @@
 			<div class="header-top">
 				<div class="logo">
 					<a href="./index.html">
-						<p style= "color: #ffffff; font-size: 36px; font-weight: 700;">
+						<p class="titlelogo">
 							Pharmacy Map
 						</p>
 					</a>
@@ -59,27 +47,27 @@
 					<nav class="cl-effect-5">
 						<li>
 							<a class="active" href="index.html">
-								<span data-hover="Home">home</span>
+								<span data-hover="Home" class="topmenu-text">home</span>
 							</a>
 						</li>
 						<li>
 							<a href="#about" class="scroll">
-								<span data-hover="info">info</span>
+								<span data-hover="info" class="topmenu-text">info</span>
 							</a>
 						</li>
 						<li>
 							<a href="#work" class="scroll">
-								<span data-hover="maps">maps</span>
+								<span data-hover="maps" class="topmenu-text">maps</span>
 							</a>
 						</li>
 						<li>
 							<a href="#services" class="scroll">
-								<span data-hover="skills">skills</span>
+								<span data-hover="skills" class="topmenu-text">skills</span>
 							</a>
 						</li>
 						<li>
 							<a href="#contact" class="scroll">
-								<span data-hover="note">note</span>
+								<span data-hover="note" class="topmenu-text">note</span>
 							</a>
 						</li>
 					</nav>
@@ -88,8 +76,7 @@
 				<!--script-nav-->
 			<script>
 				$("span.menu").click(function(){
-					$(".top-menu ul").slideToggle("slow" , function(){
-					});
+					$(".top-menu ul").slideToggle("slow" , function(){});
 				});
 			</script>
 				<div class="clearfix"></div>
@@ -137,7 +124,7 @@
 			<div class="about-header">
 				<h3>Info</h3>
 					<div class="about-imag">
-						<img src="images/Pharmacy.png" alt="#">
+						<img src="images/Pharmacy.png" alt="약국 이미지">
 					</div>
 
 					<div class="about-text">
@@ -169,9 +156,7 @@
 			<h3 class="mapTitle">Maps</h3>
 			<div class="map_wrap">
 				<div id="map"></div>
-				<!-- <script src="js/map.js"></script> -->
 				<div id="categoryWrap">
-					<div id="map" style="width:100%;height:100%;position:relative;overflow:hidden;"></div>
 					<ul id="category">
 						<li id="PM9" data-order="2"> 
 							<span class="category_bg pharmacy"></span>
@@ -181,32 +166,13 @@
 				</div>
 
 				<div class="hAddr">
-					<span class="title">지도 중심부 기준 주소정보(지번주소 기준)</span>
+					<span class="titleAddr">지도 중심부 기준 주소정보(지번주소 기준)</span>
 					<span id="centerAddr"></span>
 				</div>
 
 				<script type="text/javascript" 
 				src="//dapi.kakao.com/v2/maps/sdk.js?appkey=76ca9236bc363cb579d11ca8d617f00b&libraries=services"></script>
 				<script src="js/map.js"></script>
-				<!-- <div class="location">
-					<div class="nowLocation">
-						<h3 id="infoText">지도상에 마우스 커서를 클릭하면 해당 위치의 좌표 정보를 출력합니다.</h3>
-						<p id="result"></p>
-					</div>
-			
-					<hr>
-					<br>
-			
-					<div class="centerLocation">
-						<h3 id="infoText1">지도 중심좌표가 변경 될 때 마다 변경된 지도 정보가 출력 됩니다.</h3>
-						<p id="result1"></p>
-					</div>
-					
-					<div class="LocationzommLevel">
-						<h3 id="infoText2" class="blind">현재 지도 레벨</h3>
-						<p class="result2"></p>
-					</div>
-				</div> -->
             </div>
 		</div>
 			<div class="portfolio-section-bottom-row" id="portfolio">
@@ -229,162 +195,10 @@
 								$(".swipebox").swipebox();
 							});
 						</script>
-					<div class="sap_tabs">
-						<!-- <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
-							
-							</div> -->
-							<!-- <ul class="resp-tabs-list">
-								<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>All</span></li>
-								<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Branding</span></li>
-								<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Print</span></li>
-								<li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>Web design</span></li>
-								<li class="resp-tab-item" aria-controls="tab_item-4" role="tab"><span>Photography</span></li>
-								<div class="clearfix"></div>
-							</ul>	
-							<div id="portfoliolist">
-								<div class="resp-tabs-container">
-									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
-										<div class="tab_img">
-												<div class="col-md-3 img-top grid_box">
-													<a href="images/pic-1.jpg" class="swipebox"  title="Image Title">
-														<img src="images/pic-1.jpg" class="img-responsive" alt="">
-														<span class="zoom-icon"></span> 
-													</a>
-												</div>
-												<div class="col-md-3 img-top grid_box">
-													<a href="images/pic-2.jpg" class="swipebox"  title="Image Title">
-														<img src="images/pic-2.jpg" class="img-responsive" alt="">
-														<span class="zoom-icon"></span> 
-													</a>
-												</div>
-												<div class="col-md-3 img-top grid_box">
-													<a href="images/pic-3.jpg" class="swipebox"  title="Image Title">
-														<img src="images/pic-3.jpg" class="img-responsive" alt="">
-														<span class="zoom-icon"></span> 
-													</a>
-												</div>
-												<div class="col-md-3 img-top grid_box">
-													<a href="images/pic-4.jpg" class="swipebox"  title="Image Title">
-														<img src="images/pic-4.jpg" class="img-responsive" alt="">
-														<span class="zoom-icon"></span> 
-													</a>
-												</div>
-												<div class="col-md-3 img-top grid_box">
-													<a href="images/pic-5.jpg" class="swipebox"  title="Image Title">
-														<img src="images/pic-5.jpg" class="img-responsive" alt="">
-														<span class="zoom-icon"></span> 
-													</a>
-												</div>
-												<div class="col-md-3 img-top grid_box">
-													<a href="images/pic-6.jpg" class="swipebox"  title="Image Title">
-														<img src="images/pic-6.jpg" class="img-responsive" alt="">
-														<span class="zoom-icon"></span> 
-													</a>
-												</div>
-												<div class="col-md-3 img-top grid_box">
-													<a href="images/pic-7.jpg" class="swipebox"  title="Image Title">
-														<img src="images/pic-7.jpg" class="img-responsive" alt="">
-														<span class="zoom-icon"></span> 
-													</a>
-												</div>
-												<div class="col-md-3 img-top grid_box">
-													<a href="images/pic-8.jpg" class="swipebox"  title="Image Title">
-														<img src="images/pic-8.jpg" class="img-responsive" alt="">
-														<span class="zoom-icon"></span> 
-													</a>
-												</div>
-												<div class="clearfix"></div>	
-										</div> -->										
-									</div>
-									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
-										<div class="tab_img">
-											<div class="col-md-3 img-top grid_box">
-													<a href="images/pic-5.jpg" class="swipebox"  title="Image Title">
-														<img src="images/pic-5.jpg" class="img-responsive" alt="">
-														<span class="zoom-icon"></span> 
-												</a>
-											</div>
-											<div class="col-md-3 img-top grid_box">
-												<a href="images/pic-6.jpg" class="swipebox"  title="Image Title">
-														<img src="images/pic-6.jpg" class="img-responsive" alt="">
-														<span class="zoom-icon"></span> 
-												</a>
-											</div>
-											<div class="col-md-3 img-top grid_box">
-												<a href="images/pic-7.jpg" class="swipebox"  title="Image Title">
-														<img src="images/pic-7.jpg" class="img-responsive" alt="">
-														<span class="zoom-icon"></span> 
-												</a>
-											</div>
-											<div class="col-md-3 img-top grid_box">
-												<a href="images/pic-8.jpg" class="swipebox"  title="Image Title">
-														<img src="images/pic-8.jpg" class="img-responsive" alt="">
-														<span class="zoom-icon"></span> 
-												</a>
-											</div>
-											
-											<div class="clearfix"></div>	
-									</div>	 	        					 
-								</div>
-								<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
-									
-									<div class="tab_img">
-											<div class="col-md-3 img-top grid_box">
-												<a href="images/pic-2.jpg" class="swipebox"  title="Image Title">
-														<img src="images/pic-2.jpg" class="img-responsive" alt="">
-														<span class="zoom-icon"></span> 
-												</a>
-											</div>
-											<div class="col-md-3 img-top grid_box">
-												<a href="images/pic-3.jpg" class="swipebox"  title="Image Title">
-														<img src="images/pic-3.jpg" class="img-responsive" alt="">
-														<span class="zoom-icon"></span> 
-												</a>
-											</div>
-											<div class="col-md-3 img-top grid_box">
-												<a href="images/pic-4.jpg" class="swipebox"  title="Image Title">
-														<img src="images/pic-4.jpg" class="img-responsive" alt="">
-														<span class="zoom-icon"></span> 
-												</a>
-											</div>
-											
-												<div class="clearfix"></div>
-									</div>		        					 
-								</div>
-								<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-3">
-									<div class="tab_img">
-											<div class="col-md-3 img-top grid_box">
-												<a href="images/pic-1.jpg" class="swipebox"  title="Image Title">
-														<img src="images/pic-1.jpg" class="img-responsive" alt="">
-														<span class="zoom-icon"></span> 
-												</a>
-											</div>
-											<div class="col-md-3 img-top grid_box">
-												<a href="images/pic-2.jpg" class="swipebox"  title="Image Title">
-														<img src="images/pic-2.jpg" class="img-responsive" alt="">
-														<span class="zoom-icon"></span> 
-												</a>
-											</div>
-											
-												<div class="clearfix"></div>
-									</div>	
-								</div>
-								<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-4">
-									<div class="tab_img">
-											<div class="col-md-3 img-top grid_box">
-												<a href="images/pic-1.jpg" class="swipebox"  title="Image Title">
-														<img src="images/pic-1.jpg" class="img-responsive" alt="">
-														<span class="zoom-icon"></span> 
-												</a>
-											</div>
-											
-												<div class="clearfix"></div>
-									</div>	
-								</div>										
-							</div>	
-						</div>
-					</div>
-				</div>				
+				</div>
+			</div>
+		</div>
+	</div>
 
 		<div class="arrow">
 			<a href="#services" class="scroll">
