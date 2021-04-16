@@ -63,29 +63,9 @@
     position: relative;
 }
 
-/* #category li .bank {
-    background-position: -10px 0;
-}
-
-#category li .mart {
-    background-position: -10px -36px;
-} */
-
 #category li .pharmacy {
     background-position: -10px -72px;
 }
-
-/* #category li .oil {
-    background-position: -10px -108px;
-}
-
-#category li .cafe {
-    background-position: -10px -144px;
-}
-
-#category li .store {
-    background-position: -10px -180px;
-} */
 
 .placeinfo_wrap {
     position: absolute;

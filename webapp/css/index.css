@@ -71,7 +71,7 @@ body {
 }
 
 .top-menu {
-	float:right;
+	float: right;
 }
 
 .top-menu ul li {
@@ -554,11 +554,9 @@ ul.wmuSliderPagination {
 	-o-transition: all 0.5s linear;
 	-webkit-transition: all 0.5s linear;
 }
-/*-----------------------------------------------------------------------------------*/
-/*	Animation effects
-/*-----------------------------------------------------------------------------------*/
+
 .b-animate-go{
-	text-decoration:none;
+	text-decoration: none;
 }
 
 .b-animate{
