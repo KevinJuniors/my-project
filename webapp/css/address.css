@@ -1,9 +1,3 @@
-.map_wrap {
-    position: relative;
-    width: 100%;
-    height: 350px;
-}
-
 .titleAddr {
     display: inline-block;
     font-weight: 500;

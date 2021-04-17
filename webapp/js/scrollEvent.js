@@ -5,6 +5,6 @@ $(document).ready(function($) {
             {
                 scrollTop: $(this.hash).offset().top
             }
-        ,1200);
+        ,1500);
     });
 });
