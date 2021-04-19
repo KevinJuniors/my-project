@@ -886,19 +886,6 @@ h2.resp-accordion {
 	display: block;
 }
 
-.noteContents {
-	color: #ffffff;
-	font-size: 16px;
-}
-
-.noteContents:hover {
-	color: #87eb04;
-	border: 1px solid #87eb04;
-	font-size: 18px;
-	font-weight: 500;
-	cursor: default;
-}
-
 /* Skills Part */
 .htmlWrap {
 	float: left;
