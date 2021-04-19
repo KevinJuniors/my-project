@@ -893,7 +893,7 @@ h2.resp-accordion {
 
 .noteContents:hover {
 	color: #87eb04;
-	background-color: #0004ff;
+	border: 1px solid #87eb04;
 	font-size: 18px;
 	font-weight: 500;
 	cursor: default;
