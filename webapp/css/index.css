@@ -904,113 +904,29 @@ h2.resp-accordion {
 	float: left;
 	display: block;
 	position: relative;
-	border: 2px soild #808080;
-}
-
-.htmlWrap h3 {
-	font-family: 'Nanum Gothic', sans-serif;
-	font-weight: 600;
-}
-
-.htmlWrap p {
-	font-family: 'Black And White Picture', sans-serif;
-	display: inline-block;
-}
-
-.htmlWrap img {
-	display: inline-block;
 }
 
 .cssWrap {
 	float: right;
 	display: block;
 	position: relative;
-	left: 88px;
-	bottom: 270px;
-	border: 2px soild #808080;
-}
-
-.cssWrap h3 {
-	font-family: 'Nanum Gothic', sans-serif;
-	font-weight: 600;
-}
-
-.cssWrap p {
-	font-family: 'Black And White Picture', sans-serif;
-	display: inline-block;
-}
-
-.cssWrap img {
-	display: inline-block;
 }
 
 .jsWrap {
 	float: left;
 	display: block;
 	position: relative;
-	bottom: 250px;
-	border: 2px soild #808080;
-}
-
-.jsWrap h3 {
-	font-family: 'Nanum Gothic', sans-serif;
-	font-weight: 600;
-}
-
-.jsWrap p {
-	font-family: 'Black And White Picture', sans-serif;
-	display: inline-block;
-}
-
-.jsWrap img {
-	display: inline-block;
 }
 
 .jQueryWrap {
-	float: right;
 	display: block;
 	position: relative;
-	bottom: 495px;
-	left: 160px;
-	border: 2px soild #808080;
-}
-
-.jQueryWrap h3 {
-	font-family: 'Nanum Gothic', sans-serif;
-	font-weight: 600;
-}
-
-.jQuery p {
-	font-family: 'Black And White Picture', sans-serif;
-	display: inline-block;
-}
-
-.jQueryWrap img {
-	display: inline-block;
 }
 
 .Bootstrap {
 	float: left;
 	display: block;
 	position: relative;
-	bottom: 470px;
-	border: 2px soild #808080;
-}
-
-.Bootstrap h3 {
-	font-family: 'Nanum Gothic', sans-serif;
-	font-weight: 600;
-}
-
-.Bootstrap p {
-	font-family: 'Black And White Picture', sans-serif;
-	display: inline-block;
-}
-
-.Bootstrap img {
-	display: inline-block;
-	position: relative;
-	top: 10px;
 }
 
 .contact .noteTitle {
