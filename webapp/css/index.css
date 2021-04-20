@@ -244,8 +244,40 @@ ul.wmuSliderPagination {
 	float:left;
 }
 
+.htmlWrap {
+	display: block;
+	position: relative;
+	float: left;
+}
+
+.cssWrap {
+	display: block;
+	position: relative;
+	float: right;
+	left: 20px;
+}
+
+.jsWrap {
+	display: block;
+	position: relative;
+	float: left;
+}
+
+.jQueryWrap {
+	display: block;
+	position: relative;
+	left: 20px;
+}
+
+.Bootstrap {
+	display: block;
+	position: relative;
+	float: left;
+}
+
 .services-section {
-	padding:3em 0;
+	padding: 3em 0;
+	background-color: #faf9f9;
 }
 
 .services-header {
@@ -732,7 +764,8 @@ h2.resp-accordion {
 }
 
 .about-section {
-	padding:3em 0;
+	padding: 3em 0;
+	background-color: #f5f5f5;
 }
 
 .about-header {
@@ -841,54 +874,29 @@ h2.resp-accordion {
 }
 
 .contact {
-	padding-bottom:4em;
+	padding-bottom: 4em;
 	border-bottom: 1px solid#55626f;
 }
 
-.contactgrid {
-	padding-bottom: 2em;
+.noteTitle {
+	color: #87eb04; 
+	text-align: center;
+	font-size: 25px;
+	font-weight: 600;
+	display: block;
 }
 
-.contactgrid input[type="text"] {
-	width: 100%;
-	background: none;
-	outline: none;
-	border: none;
-	border-bottom: 1px solid#d5d6d7;
-	font-size: 15px;
-	color: #d5d6d7;
-	text-transform: capitalize;
-	padding: 10px 0;
+.noteContents {
+	color: #ffffff;
+	font-size: 16px;
 }
 
-.contactgrid1 textarea  {
-	width: 100%;
-	background: none;
-	outline: none;
-	border: none;
-	resize: none;
-	border-bottom: 1px solid#d5d6d7;
-	font-size: 15px;
-	color: #d5d6d7;
-	text-transform: capitalize;
-	padding: 10px 0;
-	height: 2.8em;
-}
-.contactgrid2 {
-	padding: 2em 0 0 17em;
-}
-
-.contactgrid2 input[type="submit"] {
-	color: #ef664d;
-	background: none;
-	border: none;
-	font-size:15px;
-	outline: none;
-	text-transform: uppercase;
-}
-
-.contactgrid2 input[type="submit"]:hover {
-	color: #d5d6d7;
+.noteContents:hover {
+	color: #87eb04;
+	border: 1px solid #87eb04;
+	font-size: 18px;
+	font-weight: 500;
+	cursor: default;
 }
 
 /* Skills Part */
@@ -896,113 +904,29 @@ h2.resp-accordion {
 	float: left;
 	display: block;
 	position: relative;
-	border: 2px soild #808080;
-}
-
-.htmlWrap h3 {
-	font-family: 'Nanum Gothic', sans-serif;
-	font-weight: 600;
-}
-
-.htmlWrap p {
-	font-family: 'Black And White Picture', sans-serif;
-	display: inline-block;
-}
-
-.htmlWrap img {
-	display: inline-block;
 }
 
 .cssWrap {
 	float: right;
 	display: block;
 	position: relative;
-	left: 88px;
-	bottom: 270px;
-	border: 2px soild #808080;
-}
-
-.cssWrap h3 {
-	font-family: 'Nanum Gothic', sans-serif;
-	font-weight: 600;
-}
-
-.cssWrap p {
-	font-family: 'Black And White Picture', sans-serif;
-	display: inline-block;
-}
-
-.cssWrap img {
-	display: inline-block;
 }
 
 .jsWrap {
 	float: left;
 	display: block;
 	position: relative;
-	bottom: 250px;
-	border: 2px soild #808080;
-}
-
-.jsWrap h3 {
-	font-family: 'Nanum Gothic', sans-serif;
-	font-weight: 600;
-}
-
-.jsWrap p {
-	font-family: 'Black And White Picture', sans-serif;
-	display: inline-block;
-}
-
-.jsWrap img {
-	display: inline-block;
 }
 
 .jQueryWrap {
-	float: right;
 	display: block;
 	position: relative;
-	bottom: 495px;
-	left: 160px;
-	border: 2px soild #808080;
-}
-
-.jQueryWrap h3 {
-	font-family: 'Nanum Gothic', sans-serif;
-	font-weight: 600;
-}
-
-.jQuery p {
-	font-family: 'Black And White Picture', sans-serif;
-	display: inline-block;
-}
-
-.jQueryWrap img {
-	display: inline-block;
 }
 
 .Bootstrap {
 	float: left;
 	display: block;
 	position: relative;
-	bottom: 470px;
-	border: 2px soild #808080;
-}
-
-.Bootstrap h3 {
-	font-family: 'Nanum Gothic', sans-serif;
-	font-weight: 600;
-}
-
-.Bootstrap p {
-	font-family: 'Black And White Picture', sans-serif;
-	display: inline-block;
-}
-
-.Bootstrap img {
-	display: inline-block;
-	position: relative;
-	top: 10px;
 }
 
 .contact .noteTitle {
