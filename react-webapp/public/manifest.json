@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "short_name": "React App",
   "name": "Create React App Sample",
   "icons": [
@@ -9,6 +10,18 @@
     }
   ],
   "start_url": "./index.html",
+=======
+  "short_name": "CoreUI-React",
+  "name": "CoreUI-React sample",
+  "icons": [
+    {
+      "src": "./assets/img/favicon.png",
+      "sizes": "100x100",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+>>>>>>> c55977d5c59b31bf61c77429e364203386475d07
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

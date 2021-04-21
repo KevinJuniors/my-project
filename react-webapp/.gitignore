@@ -2,6 +2,10 @@
 
 # dependencies
 /node_modules
+<<<<<<< HEAD
+=======
+package-lock.json
+>>>>>>> c55977d5c59b31bf61c77429e364203386475d07
 
 # testing
 /coverage
@@ -10,7 +14,13 @@
 /build
 
 # misc
+<<<<<<< HEAD
 .DS_Store
+=======
+.eslintcache
+.DS_Store
+.idea
+>>>>>>> c55977d5c59b31bf61c77429e364203386475d07
 .env.local
 .env.development.local
 .env.test.local
