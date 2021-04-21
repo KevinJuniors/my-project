@@ -23,6 +23,10 @@ class Header extends Component {
           </a>
 
           <ul id="nav" className="nav">
+            <li className="toplogo">
+              <p className="text">coffee Maps</p>
+            </li>
+
             <li className="current">
               <a className="smoothscroll" href="#home">
                 Home
@@ -57,8 +61,8 @@ class Header extends Component {
 
         <div className="row banner">
           <div className="banner-text">
-            <h1 className="responsive-headline">Coffee Maps</h1>
-            <h3>{description}.</h3>
+            <h1 className="textlogo">Coffee Maps</h1>
+            {/* <h3>{description}.</h3> */}
           </div>
         </div>
 
