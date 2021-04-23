@@ -34,6 +34,9 @@ header .banner-text {
 header .banner-text .textlogo {
    font-weight: 700;
    font-family: 'Playball', cursive;
+   font-size: 40px;
+   display: inline-block;
+   position: relative;
    color: #fff;
 }
 
@@ -134,41 +137,61 @@ ul#nav {
    min-height: 48px;
    width: auto;
    text-align: center;
-   border: 3px solid #bbb;
+   background-color: #42e2728e;
 }
 
 ul#nav li {
    position: relative;
    list-style: none;
    height: 48px;
-   display: inline-block;
+   display: block;
+   /* float: right; */
    font-size: 18px;
    font-family: 'Merriweather Sans', sans-serif;
 }
 
-.toplogo {
+.topmenu {
+   /* display: block; */
+   /* position: relative; */
+   /* float: left; */
+   background-color: #42e2728e;
+}
+
+/* .topmenu .menu {
+   border: 3px solid #333;
+} */
+
+.topmenu .textlogo {
+   font-size: 30px;
+   font-family: 'Train One', cursive;
+   color: #6f00ff;
    display: block;
    position: relative;
    float: left;
-   border: 1px solid blue;
-}
-
-.toplogo .text {
-   font-size: 24px;
-   font-family: 'Merriweather Sans', sans-serif;
-   color: #ffff00;
-   display: block;
-   position: absolute;
    text-align: center;
 }
 
 /* Links */
-ul#nav li a {
+.topmenu > ul#nav {
+   position: relative;
+   /* float: right; */
+   border: 5px solid brown;
+}
+
+.topmenu > ul#nav li {
+   display: block;
+   position: relative;
+   /* border: 2px solid blue; */
+   /* left: 675px; */
+   float: right;
+}
+
+.topmenu > ul#nav li a {
    display: inline-block;
    padding: 8px 13px;
    line-height: 32px;
 	text-decoration: none;
-   text-align: left;
+   /* text-align: center; */
    color: #fff;
 
 	-webkit-transition: color .2s ease-in-out;
@@ -178,23 +201,24 @@ ul#nav li a {
 	transition: color .2s ease-in-out;
 }
 
-ul#nav li a:active { 
+.topmenu > ul#nav li a:active { 
    background-color: transparent !important; 
 }
 
-ul#nav li a:hover { 
+.topmenu > ul#nav li a:hover { 
    background-color: #104994;
 }
 
-ul#nav li.current a { 
+.topmenu > ul#nav li.current a { 
    color: #fe6928; 
 }
 
 #about {
    background: #000524;
    padding-top: 96px;
-   padding-bottom: 66px;
+   padding-bottom: 80px;
    overflow: hidden;
+   border: 5px solid #ff7300;
 }
 
 #about a, #about a:visited  { 
@@ -370,7 +394,7 @@ ul#nav li.current a {
 }
 
 #portfolio-wrapper .columns { 
-   margin-bottom: 36px; 
+   margin-bottom: 36px;
 }
 
 .portfolio-item .item-wrap {

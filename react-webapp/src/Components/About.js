@@ -17,37 +17,46 @@ class About extends Component {
 
     return (
       <section id="about">
-        <div className="row">
+        {/* <div className="row">
           <div className="three columns">
-            <img className="profile-pic" src={profilepic} alt="Nordic Giant Profile Pic" />
-          </div>
-          <div className="nine columns main-col">
-            <h2>About Me</h2>
+            <h2>Title 1</h2>
+            <img src="images/coffee-shop.png" alt="카페 일러스트이미지" />
 
-            <p>{bio}</p>
+            <div className="columns contact-details">
+                <h2>Title 2</h2>
+                <p>Contents</p>
+              </div>
+              
+              <div className="columns download">
+                <h2>Title 3</h2>
+                <p>Contents</p>
+              </div>
+          </div>
+
+          <div className="nine columns main-col">
             <div className="row">
               <div className="columns contact-details">
-                <h2>Contact Details</h2>
-                <p className="address">
-                  <span>{name}</span>
-                  <br />
-                  <span>
-                    {street}
-                    <br />
-                    {city} {state}, {zip}
-                  </span>
-                  <br />
-                  <span>{phone}</span>
-                  <br />
-                  <span>{email}</span>
-                </p>
+                <h2>Title 2</h2>
+                <p>Contents</p>
               </div>
+              
               <div className="columns download">
-                <p>
-                  <a href={resumeDownload} className="button">
-                    <i className="fa fa-download"></i>Download Resume
-                  </a>
-                </p>
+                <h2>Title 3</h2>
+                <p>Contents</p>
+              </div>
+            </div>
+          </div>
+        </div> */}
+
+        <div className="row row-cols-md-4">
+          <div className="col">
+            <div className="card text-dark bg-light md-4">
+              <div className="card-header">
+                <h2>Title 1</h2>
+              </div>
+
+              <div className="card-body">
+                <p>Contents 1</p>
               </div>
             </div>
           </div>
