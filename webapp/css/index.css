@@ -477,15 +477,18 @@ ul.wmuSliderPagination {
 	display: block;
 	text-transform: uppercase;
 }
+
 .address{
 	border-bottom:1px solid #FFF1CE;
 	margin: 15px 0 0 0;
 }
+
 .address a{
 	color:#fff;
 	margin: 0 0 1.5em 3em;
 	display: block;
 }
+
 .tags span{
 	color: #FFF1CE;
 	font-weight: 300;
@@ -494,11 +497,13 @@ ul.wmuSliderPagination {
 	display: block;
 	text-transform: uppercase;
 }
+
 .tags p{
 	color:#fff;
 	font-weight:300;
 	font-size:14px;
 }
+
 /**** Slider *****/
 .wmuSlider {
 	position: relative;
@@ -556,8 +561,7 @@ ul.wmuSliderPagination {
 	padding-right: 0;
 	padding-left: 30px;
 }
-/*	Strip
-/*-----------------------------------------------------------------------------------*/
+
 .b-link-stripe{
 	position:relative;
 	display:inline-block;
