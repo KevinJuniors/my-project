@@ -17,40 +17,36 @@ class Header extends Component {
             Hide navigation
           </a>
 
-          {/* <div className="toplogo">
-            <h1 className="text">coffee Maps</h1>
-          </div> */}
-
           <div className="topmenu">
             <div className="menu"></div>
             <h1 className="textlogo">coffee Maps</h1>
 
             <ul id="nav" className="nav">
-              <li className="current">
+              <li className="current" id="first">
                 <a className="smoothscroll" href="#home">
                   Home
                 </a>
               </li>
               
-              <li>
+              <li id="second">
                 <a className="smoothscroll" href="#about">
                   info
                 </a>
               </li>
 
-              <li>
+              <li id="third">
                 <a className="smoothscroll" href="#resume">
                   maps
                 </a>
               </li>
 
-              <li>
+              <li id="fourth">
                 <a className="smoothscroll" href="#portfolio">
                   skills
                 </a>
               </li>
               
-              <li>
+              <li id="fifth">
                 <a className="smoothscroll" href="#contact">
                   note
                 </a>
