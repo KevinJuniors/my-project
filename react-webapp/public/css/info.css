@@ -1,0 +1,7 @@
+.col {
+    border: 5px solid blue;
+}
+
+.col>.card>.card-header>h2 {
+    color: yellowgreen;
+}

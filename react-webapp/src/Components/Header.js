@@ -1,29 +1,17 @@
 import React, { Component } from "react";
-import ParticlesBg from "particles-bg";
 
 class Header extends Component {
   render() {
-    if (!this.props.data) return null;
-
     return (
       <header id="home">
-        <ParticlesBg type="circle" bg={true} />
-        
         <nav id="nav-wrap">
-          <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
-            Show navigation
-          </a>
-          <a className="mobile-btn" href="#home" title="Hide navigation">
-            Hide navigation
-          </a>
-
-          {/* <div className="toplogo">
-            <h1 className="text">coffee Maps</h1>
-          </div> */}
+          <a className="mobile-btn" href="#nav-wrap" title="Show navigation"></a>
+          <a className="mobile-btn" href="#home" title="Hide navigation"></a>
 
           <div className="topmenu">
-            <div className="menu"></div>
-            <h1 className="textlogo">coffee Maps</h1>
+            <div className="logowrap">
+              <h1 className="textlogo">coffee Maps</h1>
+            </div>
 
             <ul id="nav" className="nav">
               <li className="current">
@@ -59,17 +47,19 @@ class Header extends Component {
           </div>
         </nav>
 
+        <img src="images/coffee-banner3.png" alt="커피 배너이미지" />
+
         <div className="row banner">
           <div className="banner-text">
-            <h2 className="textlogo">Coffee Maps Webapp 방문을 환영합니다.</h2>
+            <h2 className="textitem">Coffee Maps Webapp 지도 웹 서비스 방문을 환영합니다</h2>
           </div>
         </div>
 
-        <p className="scrolldown">
+        {/* <p className="scrolldown">
           <a className="smoothscroll" href="#about">
             <i className="icon-down-circle"></i>
           </a>
-        </p>
+        </p> */}
       </header>
     );
   }
