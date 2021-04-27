@@ -5,8 +5,17 @@ class Header extends Component {
     return (
       <header id="home">
         <nav id="nav-wrap">
+<<<<<<< HEAD
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation"></a>
           <a className="mobile-btn" href="#home" title="Hide navigation"></a>
+=======
+          <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
+            Show navigation
+          </a>
+          <a className="mobile-btn" href="#home" title="Hide navigation">
+            Hide navigation
+          </a>
+>>>>>>> 06d5d600d3b612ef0c4295bee34fb71743c3315d
 
           <div className="topmenu">
             <div className="logowrap">
@@ -14,31 +23,31 @@ class Header extends Component {
             </div>
 
             <ul id="nav" className="nav">
-              <li className="current">
+              <li className="current" id="first">
                 <a className="smoothscroll" href="#home">
                   Home
                 </a>
               </li>
               
-              <li>
+              <li id="second">
                 <a className="smoothscroll" href="#about">
                   info
                 </a>
               </li>
 
-              <li>
+              <li id="third">
                 <a className="smoothscroll" href="#resume">
                   maps
                 </a>
               </li>
 
-              <li>
+              <li id="fourth">
                 <a className="smoothscroll" href="#portfolio">
                   skills
                 </a>
               </li>
               
-              <li>
+              <li id="fifth">
                 <a className="smoothscroll" href="#contact">
                   note
                 </a>

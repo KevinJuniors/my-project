@@ -135,9 +135,13 @@ ul#nav {
    width: auto;
    text-align: center;
    background-color: #42e2728e;
+<<<<<<< HEAD
    display: block;
    position: absolute;
    /* float: right; */
+=======
+   display: flex;
+>>>>>>> 06d5d600d3b612ef0c4295bee34fb71743c3315d
    /* flex-direction: column-reverse; */
    /* transform: rotate(180deg); */
 }
@@ -158,12 +162,23 @@ ul#nav li {
 
 .topmenu {
    display: block;
+<<<<<<< HEAD
    position: relative;
    background-color: #42e272;
    width: 100%;
    float: right;
 }
 
+=======
+   background-color: #42e2728e;
+}
+
+/* .topmenu .menu {
+   border: 3px solid #333;
+   float: right;
+} */
+
+>>>>>>> 06d5d600d3b612ef0c4295bee34fb71743c3315d
 .topmenu .textlogo {
    font-size: 32px;
    font-family: 'Train One', cursive;
@@ -171,26 +186,35 @@ ul#nav li {
    display: block;
    position: relative;
    float: left;
+<<<<<<< HEAD
 
    display: block;
    position: relative;
    background-color: #42e2728e;
    cursor: default;
+=======
+>>>>>>> 06d5d600d3b612ef0c4295bee34fb71743c3315d
 }
 
 /* Links */
 .topmenu > ul#nav {
    position: relative;
+<<<<<<< HEAD
    display: block;
    /* float: left; */
    float: right;
    min-height: 50px;
    right: 130px;
+=======
+   /* float: right; */
+   /* border: 5px solid brown; */
+>>>>>>> 06d5d600d3b612ef0c4295bee34fb71743c3315d
 }
 
 .topmenu > ul#nav li {
    display: block;
    position: relative;
+<<<<<<< HEAD
    margin-left: 10px;
    top: 10px;
    float: left;
@@ -201,6 +225,24 @@ ul#nav li {
    line-height: 32px;
 	text-decoration: none;
    color: #3a1de2;
+=======
+   /* flex-direction: column-reverse; */
+   /* border: 2px solid blue; */
+   /* left: 675px; */
+   float: right;
+}
+
+.topmenu > ul#nav li a {
+   /* display: inline-block; */
+   padding: 8px 13px;
+   line-height: 32px;
+	text-decoration: none;
+   /* text-align: center; */
+   color: #fff;
+   /* display: flex;
+   position: relative;
+   flex-direction: column-reverse; */
+>>>>>>> 06d5d600d3b612ef0c4295bee34fb71743c3315d
 
 	/* -webkit-transition: color .2s ease-in-out;
 	-moz-transition: color .2s ease-in-out;
