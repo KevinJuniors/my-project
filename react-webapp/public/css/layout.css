@@ -120,7 +120,7 @@ header .scrolldown a:hover {
    text-transform: uppercase;
    letter-spacing: 2.5px;
    margin: 0 auto;
-   z-index: 100;
+   z-index: 100000000;
    position: fixed;
    left: 0;
    top: 0;
@@ -226,10 +226,11 @@ ul#nav li {
 
 #about {
    background: #000524;
-   padding-top: 96px;
-   padding-bottom: 80px;
    overflow: hidden;
-   border: 5px solid #ff7300;
+   border: 1px solid #ff7300;
+   display: block;
+   position: relative;
+   top: 1px;
 }
 
 #about a, #about a:visited  { 
@@ -748,7 +749,6 @@ ul#nav li {
 
 .flexslider .slides > li {
    display: none; 
-   -webkit-backface-visibility: hidden; 
 }
 
 .flex-container { 
@@ -877,7 +877,6 @@ ul#nav li {
    margin: 12px 0;
    color: #EBEEEE;
 	display: inline-block;
-	float: left;
    width: 26%;
 }
 
