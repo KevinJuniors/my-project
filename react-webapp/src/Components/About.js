@@ -72,11 +72,16 @@ class About extends Component {
             <div className="col">
               <div className="card text-dark bg-info lg-3">
                 <div className="card-header">
-                  <h2>Title 5</h2>
+                  <h2>
+                    단일 페이지로 구성되어 페이지 <br /> 
+                    이동하는 번거러움은 이제 그만...
+                  </h2>
                 </div>
 
                 <div className="card-body">
-                  <p>Contents 5</p>
+                  <p>
+                    한 페이지에서 모든 웹 컨텐츠를 <br /> 이용 할 수 있습니다..!!
+                  </p>
                 </div>
               </div>
             </div>
@@ -84,11 +89,15 @@ class About extends Component {
             <div className="col">
               <div className="card text-dark bg-info lg-3">
                 <div className="card-header">
-                  <h2>Ttitle 6</h2>
+                  <h2>별도의 로그인/회원가입 없이도 이용 가능</h2>
                 </div>
 
                 <div className="card-body">
-                  <p>Contents 6</p>
+                  <p>
+                  로그인 및 회원가입 없이 누구나<br />
+                  자유롭게 저희 웹 서비스에 접속하셔서<br />
+                  카페 위치를 찾아 보실 수 있습니다..
+                  </p>
                 </div>
               </div>
             </div>
@@ -97,44 +106,6 @@ class About extends Component {
           <div className="photowrap">
             <img src="images/testimonials-bg.jpg" alt="cafe-images" />
           </div>
-
-          {/* <div className="row row-cols-lg-3" id="thirdwrap">
-            <div className="col">
-              <div className="card text-dark bg-info lg-3">
-                <div className="card-header">
-                  <h2>Title 7</h2>
-                </div>
-
-                <div className="card-body">
-                  <p>Contents 7</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col">
-              <div className="card text-dark bg-info lg-3">
-                <div className="card-header">
-                  <h2>Title 8</h2>
-                </div>
-
-                <div className="card-body">
-                  <p>Contents 8</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col">
-              <div className="card text-dark bg-info lg-3">
-                <div className="card-header">
-                  <h2>Ttitle 9</h2>
-                </div>
-
-                <div className="card-body">
-                  <p>Contents 9</p>
-                </div>
-              </div>
-            </div>
-          </div> */}
         </div>
       </section>
     );
