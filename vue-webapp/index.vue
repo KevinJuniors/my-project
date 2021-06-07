@@ -40,6 +40,6 @@
     @import "@/assets/stylesheets/index.scss";
 
     #map {
-        @include css-size(1200px, 800px)
+        @include css-size(1200px, 800px);
     }
 </style>
