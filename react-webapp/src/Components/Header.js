@@ -54,12 +54,6 @@ class Header extends Component {
             <h2 className="textitem">Coffee Maps Webapp 지도 웹 서비스 방문을 환영합니다</h2>
           </div>
         </div>
-
-        {/* <p className="scrolldown">
-          <a className="smoothscroll" href="#about">
-            <i className="icon-down-circle"></i>
-          </a>
-        </p> */}
       </header>
     );
   }
