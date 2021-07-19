@@ -17,7 +17,6 @@ class Resume extends Component {
     const education = this.props.data.education.map(function(education) {
       return (
         <div key={education.school}>
-            {/* <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=863770c5abc1c1d43b8b6cec83b3b155&libraries=services"></script> */}
             <div id="map"></div>
             <script src="src/map.js"></script>
         </div>
