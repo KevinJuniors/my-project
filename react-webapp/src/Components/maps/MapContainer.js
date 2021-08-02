@@ -7,14 +7,21 @@ const MapContainer = ({ searchPlace }) => {
     var infowindow = new kakao.maps.InfoWindow({ zIndex: 1 })
     const container = document.getElementById('myMap')
     const options = {
-      center: new kakao.maps.LatLng(33.450701, 126.570667),
+      center: new kakao.maps.LatLng(37.2100104526833, 127.05926918036364),
       level: 3,
     }
     const map = new kakao.maps.Map(container, options)
 
+    const mapTypeControl = new kakao.maps.MapTypeControl();
+
     const ps = new kakao.maps.services.Places()
 
     ps.keywordSearch(searchPlace, placesSearchCB)
+    
+    map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+
+    const zoomControl = new kakao.maps.ZoomControl();
+    map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 
     function placesSearchCB(data, status, pagination) {
       if (status === kakao.maps.services.Status.OK) {
@@ -45,14 +52,10 @@ const MapContainer = ({ searchPlace }) => {
   }, [searchPlace])
 
   return (
-     <div
-        id="myMap"
-        style={{
-          width: '500px',
-          height: '500px',
-        }}>
-     </div>
+    <div id="myMap" style={{width: '1000px', height: '700px'}}>
+      <img src="images/coffeeShop.jpg" alt="커피숍 이미지" />
+    </div>
   )
 }
 
-export default MapContainer
+export default MapContainer;

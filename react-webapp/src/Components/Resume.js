@@ -17,11 +17,7 @@ class Resume extends Component {
     const skillmessage = this.props.data.skillmessage;
     const education = this.props.data.education.map(function(education) {
       return (
-        <div key={education.school}>
-            {/* <div id="map"></div> */}
-            <MapContainer />
-            {/* <script src="src/map.js"></script> */}
-        </div>
+        <MapContainer />
       );
     });
 
