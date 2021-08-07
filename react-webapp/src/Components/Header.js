@@ -5,9 +5,6 @@ class Header extends Component {
     return (
       <header id="home">
         <nav id="nav-wrap">
-          <a className="mobile-btn" href="#nav-wrap" title="Show navigation"></a>
-          <a className="mobile-btn" href="#home" title="Hide navigation"></a>
-
           <div className="topmenu">
             <div className="logowrap">
               <h1 className="textlogo">coffee Maps</h1>

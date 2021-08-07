@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import MapContainer from "./maps/MapContainer";
-
 class Resume extends Component {
   getRandomColor() {
     let letters = "0123456789ABCDEF";
