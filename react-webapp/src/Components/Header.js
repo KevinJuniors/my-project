@@ -5,9 +5,6 @@ class Header extends Component {
     return (
       <header id="home">
         <nav id="nav-wrap">
-          <a className="mobile-btn" href="#nav-wrap" title="Show navigation"></a>
-          <a className="mobile-btn" href="#home" title="Hide navigation"></a>
-
           <div className="topmenu">
             <div className="logowrap">
               <h1 className="textlogo">coffee Maps</h1>
@@ -51,7 +48,7 @@ class Header extends Component {
 
         <div className="row banner">
           <div className="banner-text">
-            <h2 className="textitem">Coffee Maps Webapp 지도 웹 서비스 방문을 환영합니다</h2>
+            <h2 className="textitem">힘들고 지칠 때 가까운 카페를 방문하여 <br />카페인을 충전하세요!!</h2>
           </div>
         </div>
       </header>
