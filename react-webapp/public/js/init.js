@@ -98,7 +98,7 @@ jQuery(document).ready(function($) {
         data: data,
         success: function(msg) {
           // Message was sent
-          if (msg == "OK") {
+          if (msg === "OK") {
             $("#image-loader").fadeOut();
             $("#message-warning").hide();
             $("#contactForm").fadeOut();
